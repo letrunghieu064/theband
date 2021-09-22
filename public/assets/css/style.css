@@ -1,0 +1,127 @@
+/* reset css */
+* {
+    padding :0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+nguyên tắc: 
+1.từ ngoài vào trong
+2.từ trên xuống dưới 
+3. tổng quan chi tiết
+
+1.vị trí 
+2.kích thức 
+3.màu sắc
+4.kiểu dáng (hình trìn , hình vuông ...)
+display: none là ẩn đi
+*/
+#main{
+
+}
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
+}
+#nav{
+    display:inline-block ;
+}
+
+#nav> li:hover >a,
+#nav .subnav li:hover{
+    color:#000;
+    background-color: #ccc;
+}
+#nav >li{
+    display: inline-block;
+}
+#nav,.subnav{
+    list-style-type: none;
+}
+
+#nav li{
+    
+    position: relative;
+}
+/*#nav li:hover a{
+    color:#000;
+    background-color: #ccc;
+}*/
+#nav .subnav{
+  min-width: 160;
+  display: none;
+  top:100%;
+  left:0%;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+  
+  
+}
+#nav .nav-row-dow{
+ font-size: 2px;
+}
+#header .search-btn{
+    float: right;
+    padding:0 21px;
+    cursor: pointer;
+
+
+}
+#header .search-btn:hover{
+    background:#f44336; 
+
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav a{
+    color:#000;
+    padding: 0 38px;
+}
+/*#nav .subnav li:hover{
+    color:#000;
+    background-color: #ccc; 
+}*/
+#nav >li >a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+  /*  color: #fff;*/
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+     display: inline-block ;
+     
+}
+#slider{
+   /* min-height: 500px;
+    background-color: #333;  */
+        margin-top: 46px;
+        padding-top: 50%;
+        background:url('/public/assets/img/slider/slider1.jpg') top center /cover  no-repeat;
+}
+#content{
+    
+}
+#footer{
+    
+}
+
+
